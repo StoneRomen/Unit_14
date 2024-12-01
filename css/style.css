@@ -1,0 +1,63 @@
+.slider {
+    position: relative;
+    width: 80%;
+    max-width: 800px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    padding-left: 7%;
+}
+
+.navigation {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.navigation button {
+    background: rgba(33, 28, 110, 0.5);
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.dots {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: #d3d0e4;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.dot.active {
+    background: #6e1beb;
+}
+
+.text {
+    font-size: 1.5rem;
+    text-align: left;
+    display: block;
+    float: right;
+    max-width: 50%;
+    margin-right: 10%;
+}
